@@ -1,0 +1,23 @@
+<div class="container text-center">
+  <h1>Go pour la visio!</h1>
+
+
+  <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+
+  <script>
+    callFrame = window.DailyIframe.createFrame(
+        {
+          showLeaveButton: true,
+          iframeStyle: {
+            position: 'fixed',
+            marginLeft: '10%',
+            width: '80%',
+            height: '100%'
+          }
+        }
+      );
+    callFrame.join({ url: "https://mihivai.daily.co/<%= @user.visios.first.api_token %>" })
+  </script>
+
+</div>
+

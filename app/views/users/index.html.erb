@@ -1,0 +1,12 @@
+<div class="container text-center">
+  <h1>Mes Clients</h1>
+
+  <ul>
+    <% @users.each do |user| %>
+      <li><%= link_to user, user %></li>
+    <% end %>
+  </ul>
+
+</div>
+
+
